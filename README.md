@@ -1,99 +1,128 @@
-# Hi there 👋 I'm RayMor
+<div align="center">
 
-> 哈工大（威海）软件工程 2025 级在读 · 全栈开发 / AI 工程化 / 游戏开发  
-> 喜欢把想法从零推到上线，从代码写到文档。也喜欢帆船、航拍、摄影和一切好玩的东西 🚀
+> [English](./README_en.md) | **简体中文**
 
----
+# RayMor · Ray
 
-## 🚀 Featured Projects
+**哈工大（威海）软件工程在读 · 造 AI Agent 工具链、语音输入与端侧工具 —— 先自用，再开源。**
 
-### 🎭 AI 狼人杀 — 多智能体自对弈 & 自进化系统
-LLM 驱动的狼人杀 Agent 框架，含 Bad Case 经验库 + Knowledge 策略库双链路自进化。通用 Agent 层与游戏逻辑解耦，可复用到辩论赛等多人博弈场景。3 个独立前端（对局观战 / 评测中心 / 监控大盘），已上线公网运行。
+![HIT Weihai](https://img.shields.io/badge/哈尔滨工业大学（威海）-软件工程-005BBB)
+![Focus](https://img.shields.io/badge/focus-AI%20Agent%20%7C%20语音输入%20%7C%20端侧工具-7C3AED)
+![Principle](https://img.shields.io/badge/principle-本地优先%20%7C%20隐私优先-2E7D32)
 
-[![Demo](https://img.shields.io/badge/🖥️-Live_Demo-blue)](http://106.54.202.202:8080)
-[![GitHub](https://img.shields.io/badge/📂-Source-black)](https://github.com/oifi123666/ILoveBytedance)
-`Python` `FastAPI` `Vue 3` `TypeScript` `SSE` `LLM API`
-
-### ☕ 骗子咖啡馆 LiarsCafe — 3D 多人联机诈唬卡牌游戏
-服务端权威架构 + Three.js 3D 场景 + WebRTC P2P 实时语音 + 断线重连。pnpm monorepo 架构，4 子包（web / server / protocol / game-core），Playtest-Ready 阶段。
-
-[![Demo](https://img.shields.io/badge/🖥️-Live_Demo-blue)](https://liars.rayan.ccwu.cc/)
-`React` `Three.js` `Colyseus` `WebRTC` `TypeScript` `pnpm`
-
-### 💘 Date Match — 17w+ 用户关系匹配平台
-真实 C 端产品，累计 17w+ 问卷、24w+ 匹配记录。参与全栈开发：匹配管线、LLM 心理画像、可解释匹配、配对广场、后台运营、生产排查。
-
-`Next.js` `React` `Prisma` `PostgreSQL` `tRPC` `Tailwind CSS`
+</div>
 
 ---
 
-## 🛠 Tech Stack
+## 关于我
 
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
-![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat&logo=next.js&logoColor=white)
-![Vue](https://img.shields.io/badge/-Vue_3-4FC08D?style=flat&logo=vue.js&logoColor=white)
-![Three.js](https://img.shields.io/badge/-Three.js-000000?style=flat&logo=three.js&logoColor=white)
-![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
-![Prisma](https://img.shields.io/badge/-Prisma-2D3748?style=flat&logo=prisma&logoColor=white)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/-Tailwind-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
-![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white)
-![WebRTC](https://img.shields.io/badge/-WebRTC-333333?style=flat&logo=webrtc&logoColor=white)
+我在哈尔滨工业大学（威海）读软件工程。做过的项目大多有一个共同起点：**自己先被某件小事烦到，然后把它做成工具。** 于是这条线上长出了两类东西——一类把重复劳动从人手里挪给 AI Agent，一类把 AI 塞回端侧设备，让"能自动化"重新变得隐私、可控、离线可用。
+
+除了写代码，我也喜欢帆船、航拍和摄影——但在这个主页里，先把工程讲清楚。
+
+## 关注方向
+
+- **AI Agent 工具链** —— 把主 Agent 最贵的上下文留给决策，把"读一大堆、只想要一个结论"的粗活外包给独立子 Agent；也让 Agent 通过 MCP 直接操控端侧设备。
+- **语音输入** —— 把"说完即见字"钉进桌面与手机：端侧 ASR 换隐私与延迟，服务端大脑换模型可热更。
+- **端侧工具** —— 不改系统、不要 root、尽量离线，把被厂商或系统藏起来的能力还给用户。
 
 ---
 
-## 🙋 About Me
+## 精选项目
 
-### 🏫 Campus Life
+### 🧩 AI Agent 工具链
 
-- **哈尔滨工业大学（威海）** · 计算机科学与技术学院 · 软件工程（卓越优才）
-- 学生会国际交流中心干事 · 智造新界平台商务部 & 游戏部 · 华为俱乐部宣传部
-- **帆船队成员（缭手）** 🛥️ — 代表哈工大 2 队参加 2026 中国威海 HOBIE 帆船公开赛暨 HOBIE16 亚洲锦标赛，竞赛第 32 名
-- 曾任 "丁香远航" 粤港澳大湾区研学活动小组长、教学工厂开放日讲解员
+**oc-run2 — 把 OpenCode 2 变成任意 Harness 的子 Agent**
+主 Agent 负责指挥、子 Agent 负责干活。子 Agent 可用任意模型（DeepSeek / GLM / Kimi / 免费档），一次最多并行 6 个，结束后回一张含 session、tokens 与 cost（美元）的结构化汇总。
+`Python` · `OpenCode 2` · `MIT`
+→ [RayMorTwinkle/oc-run2](https://github.com/RayMorTwinkle/oc-run2)
 
-### 🏆 Highlights
+**de-run — 把华为 DevEco Code 变成子 Agent**
+与 oc-run2 同款用法，底层换成华为 DevEco Code：登录华为账号即用免费 GLM-5.1 通道，把"通读鸿蒙文档 / 陌生仓库"的活外包出去，零模型费。
+`Python` · `HarmonyOS` · `MIT`
+→ [RayMorTwinkle/de-run](https://github.com/RayMorTwinkle/de-run)
 
-- 全国大学生英语竞赛初赛 96 分 · 英语能力竞赛省级配音三等奖 & 单词一等奖
-- 科普科幻作文大赛省级一等奖 · 创新能力竞赛初赛一等奖
-- 双语主持校级英语赛事 · 连续两年策划班级元旦晚会
+**NeuralBridge — 让任意 AI Agent 直接操控 Android**
+把自动化能力塞进手机 App：内置 Ktor CIO HTTP MCP 服务器（端口 `7474`），由端侧 `AccessibilityService` 在本进程内执行手势、读 UI 树、截图。无需 root，平均 ~6.4ms。
+`Kotlin` · `MCP` · `Apache-2.0`
+→ [RayMorTwinkle/NeuralBridge_mcp](https://github.com/RayMorTwinkle/NeuralBridge_mcp)
+
+**QoderSM — Qoder 会话管理器**
+Qoder IDE 按身份隔离本地会话，换号即"整片消失"。一键备份 / 恢复 / 导出这些历史对话，提供 CLI / Web / 桌面 / 菜单栏四端。
+`Go` · `macOS` · `SQLite + JSONL`
+→ [RayMorTwinkle/QoderSM](https://github.com/RayMorTwinkle/QoderSM)
+
+### 🎙️ 语音输入
+
+**RayVoice2 — 悦我语音输入**
+客户端是哑终端，服务端是大脑：桌面用全局热键、安卓用悬浮球 + 无障碍，不抢输入法。转写 / 润色 / 翻译 / 按选中文本改写全部在服务端，模型与 prompt 可热更、客户端不发版。
+`Electron + React` · `Kotlin` · `Python FastAPI`
+→ [RayMorTwinkle/RayVoice2](https://github.com/RayMorTwinkle/RayVoice2)
+
+**RayVoice — 悦我输入法（macOS）**
+F9 说完，光标处直接出现整理好的书面文字：本地 ASR（sherpa-onnx Zipformer）+ LLM 流式整理 + 打字机注入，原文先上屏、整理稿随后无缝替换。
+`Rust` · `sherpa-onnx` · `macOS`
+→ [RayMorTwinkle/RayVoice](https://github.com/RayMorTwinkle/RayVoice)
+
+### 🧷 端侧 / 桌面工具
+
+**HotspotTile — 把被藏起来的 WiFi 热点开关还给用户**
+很多平板把「个人热点 / WLAN 共享」从快捷面板抹掉了。桌面一键直达 + 控制中心磁贴真开关，免 Root 直接开热点（Android ≤ 15），不联网、零第三方依赖。
+`Kotlin` · `Android`
+→ [RayMorTwinkle/HotspotTile](https://github.com/RayMorTwinkle/HotspotTile)
+
+**OpenWithGUI — macOS「打开方式」统一管理器**
+用一张表看清并批量改掉全系统默认应用，告别逐个扩展名地"显示简介 → 打开方式 → 全部更改"。
+`Swift` · `macOS 14+`
+→ [RayMorTwinkle/OpenWithGUI2](https://github.com/RayMorTwinkle/OpenWithGUI2)
+
+> **更多项目**：[CodeCenter](https://github.com/RayMorTwinkle/CodeCenter)（装进 Android 的 AI 编程工作站）、[issue-triage-bot](https://github.com/RayMorTwinkle/issue-triage-bot)（LLM 值守 GitHub Issues 的自反馈流水线）、[tabby-rayremote-link](https://github.com/RayMorTwinkle/tabby-rayremote-link)（把本地 Tabby 终端借给云端）、[archify-pure](https://github.com/RayMorTwinkle/archify-pure)（代码仓库 → 离线可交互系统地图）、[prisma_note](https://github.com/RayMorTwinkle/prisma_note)、[DailyNews](https://github.com/RayMorTwinkle/DailyNews)、[ray-blog](https://github.com/RayMorTwinkle/ray-blog)。
 
 ---
 
-## 🎯 Interests & Hobbies
+## 项目地图
 
-> *除了写代码，我还喜欢这些——说不定我们有共同话题！*
+```mermaid
+flowchart LR
+  R["RayMor"] --> A["🧩 AI Agent 工具链"]
+  R --> V["🎙️ 语音输入"]
+  R --> E["🧷 端侧 / 桌面工具"]
 
-| 类别 | 爱好 |
-|------|------|
-| 🏃 运动 | 帆船（HOBIE 双体船）、羽毛球、乒乓球、游泳（蛙泳 & 自由泳）、骑行、排球、网球、台球 |
-| 📷 影像 | 手机摄影、无人机航拍、视频剪辑、基础视觉设计 |
-| 🎵 音乐 | 电子音乐、欧美流行乐 |
-| 📱 数码 | 数码产品测评、创意设计 |
-| 📖 其他 | 英语（备考雅思中）、技术写作、活动策划与组织、Furry纯净爱好者 |
+  A --> A1["oc-run2 / de-run<br/>子 Agent 外包"]
+  A --> A2["NeuralBridge<br/>Agent 操控 Android"]
+  A --> A3["QoderSM<br/>会话备份恢复"]
 
----
+  V --> V1["RayVoice2<br/>客户端零模型 · 服务端大脑"]
+  V --> V2["RayVoice<br/>macOS 端侧 ASR"]
 
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=RayMorTwinkle&show_icons=true&theme=tokyonight&hide_border=true" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RayMorTwinkle&layout=compact&theme=tokyonight&hide_border=true" height="165" />
-</p>
+  E --> E1["HotspotTile<br/>热点磁贴"]
+  E --> E2["OpenWithGUI<br/>打开方式管理"]
+```
 
 ---
 
-## 📬 Let's Connect!
+## 技术栈
 
-- 📧 **Email**: raymor@raymor.top
-- 🌐 **Blog**: [blog.raymor.top](https://blog.raymor.top/)
-- 💬 **WeChat / 飞书**: 欢迎通过邮件联系交换
-
-> 不管你是对上面的项目感兴趣、想一起做点东西、还是刚好也喜欢运动/AI——都欢迎来聊聊 👋
+| 层 | 常用 |
+|---|---|
+| 语言 | TypeScript · Python · Rust · Go · Kotlin · Swift · Dart |
+| 前端 | React · Vue 3 · Next.js · Astro · Three.js · Tailwind CSS |
+| 后端 | FastAPI · Node.js · tRPC · Prisma · PostgreSQL · SQLite |
+| 端侧 / 移动 | Android（Kotlin + Compose）· Flutter · proot · AccessibilityService |
+| AI / Agent | MCP · LLM API（流式）· ASR（sherpa-onnx）· OpenCode · 多 Agent 编排 |
 
 ---
 
-> *"Ship it, then make it better."*
+## 联系
+
+- **GitHub**：[@RayMorTwinkle](https://github.com/RayMorTwinkle)
+- **博客**：[blog.raymor.top](https://blog.raymor.top/)
+- **邮箱**：raymor@raymor.top
+
+> 对上面的项目感兴趣、想一起做点东西，或者只是想聊聊——欢迎来聊 👋
+
+---
+
+<div align="center">
+<sub>"Ship it, then make it better."</sub>
+</div>
